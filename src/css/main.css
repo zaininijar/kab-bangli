@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .__wrapper {
+    @apply min-h-screen h-screen overflow-hidden flex items-center relative z-10 custom-gradient;
+  }
+
+  .__right-side {
+    @apply custom-gradient w-full h-full flex items-center relative overflow-hidden;
+  }
+
+  .__right-side .__img-container {
+    @apply h-[794px] w-full absolute left-0 flex items-center;
+  }
+
+  .__right-side .__img-container img {
+    @apply min-h-[45vw] aspect-video object-cover object-left;
+  }
+
+  .__main-content {
+    @apply flex flex-col justify-center 2xl:gap-8 sm:gap-6 gap-3 h-full 2xl:px-10 2xl:py-20 sm:px-8 sm:py-14 px-6 py-12 sm:rounded-r-[20px] lg:min-w-[45%] sm:min-w-[70%] min-w-full custom-shadow bg-white relative z-10;
+  }
+
+  /* perubahan responsive logo */
+  .__brand {
+    @apply sm:h-[53px] sm:w-[239px] h-[35px] w-[170px] mb-10 sm:mb-0 sm:absolute sm:top-[44px];
+  }
+
+  .__heading-1 {
+    @apply text-[#F28A00] noto-sans 2xl:text-[32px] sm:text-[28px] text-2xl font-bold leading-normal;
+  }
+
+  .__text-1 {
+    @apply text-[#484848] roboto sm:text-base text-xs font-normal leading-[22px];
+  }
+
+  .__label-input {
+    @apply text-[#484848] sm:text-lg text-sm font-semibold inter;
+  }
+
+  .__input {
+    @apply sm:py-5 py-4 sm:px-6 px-5 text-sm font-normal noto-sans rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#F39D2A] border border-[#7F7F7F];
+  }
+
+  .__input.__input-error {
+    @apply ring-red-300 focus:ring-red-400 ring-2 outline-red-500;
+  }
+
+  .__error-message {
+    @apply sm:text-sm text-xs font-normal text-red-300 -mt-1;
+  }
+
+  .__btn-primary {
+    @apply roboto font-semibold sm:text-xl text-base tracking-[-0.16px] text-white bg-[#F39D2A] hover:bg-orange-400 sm:py-4 sm:px-7 px-4 py-3 rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#F39D2A];
+  }
+}
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.custom-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.custom-gradient {
+  background: linear-gradient(111deg, #f39d2a 32.41%, #f37335 104.34%);
+}

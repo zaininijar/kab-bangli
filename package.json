@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch"
+  },
+  "name": "kab-tanggerang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
