@@ -20,12 +20,16 @@
     @apply flex gap-2 sm:h-[53px] h-[35px] mb-10 sm:mb-0 sm:absolute sm:top-[64px] sm:left-[64px] text-white;
   }
 
+  .__brand-mobile {
+    @apply flex items-center gap-2 sm:h-[53px] h-[35px] mb-10 sm:mb-0 sm:absolute sm:top-[-64px] sm:left-[64px] text-white sm:hidden;
+  }
+
   .__brand .__brand-img {
     @apply w-[46px] h-[56px];
   }
 
-  .__brand .__brand-img-mobile {
-    @apply w-[32px];
+  .__brand-img-mobile {
+    @apply w-[26px] h-[32px];
   }
 
   .__heading-1 {
