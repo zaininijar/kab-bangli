@@ -17,27 +17,41 @@
     <title>PBJ | Login</title>
   </head>
   <body>
-    <div
-      class="__wrapper"
-      style="
-        background: url('../images/bg.png');
-        background-position: right;
-        background-size: cover;
-      "
-    >
-      <div class="__main-content">
+    <div class="__wrapper">
+      <div class="__left-img">
         <div class="__brand">
           <img class="__brand-img" src="../images/logo.png" alt="" />
+          <div>
+            <p class="text-[16px] font-[600]">Pemerintahan</p>
+            <p class="font-[700] text-[20px]">Kabupaten Karanganyar</p>
+          </div>
         </div>
-        <div class="text-start sm:w-[402px] w-full mx-auto">
-          <h1 class="__heading-1">Selamat Datang 👋🏻</h1>
-          <p class="__text-1">Silahkan Login untuk melanjutkan.</p>
+        <img
+          class="object-cover object-center h-full w-full rounded-2xl"
+          src="../images/bg.png"
+          alt=""
+        />
+      </div>
+      <div class="__main-content">
+        <div class="__brand">
+          <img class="__brand-img-mobile" src="../images/logo.png" alt="" />
+          <div>
+            <p class="text-[#121926] text-[10px] font-[600]">Pemerintahan</p>
+            <p class="text-[#121926] font-[500] text-[14px]">
+              Kabupaten Karanganyar
+            </p>
+          </div>
+        </div>
+        <div class="text-start sm:w-[400px] w-full mx-auto">
+          <h1 class="__heading-1">Selamat Datang</h1>
+          <h1 class="__heading-1 text-[#121926]">di Kab. Karanganyar</h1>
+          <p class="__text-1">Silahkan masuk ke akun Anda untuk melanjutkan</p>
         </div>
         <form
           action="#"
           method="post"
           id="login-form"
-          class="sm:w-[402px] w-full mx-auto"
+          class="sm:w-[400px] w-full mx-auto"
         >
           <div class="flex flex-col 2xl:gap-8 sm:gap-6 gap-4">
             <div class="flex flex-col sm:gap-5 gap-4">
@@ -47,7 +61,7 @@
                   class="__input"
                   type="text"
                   name="email"
-                  placeholder="Masukan Email Anda"
+                  placeholder="emailanda@gmail.com"
                   id="email"
                   required
                   oninput="inputValidation(event)"
@@ -65,7 +79,7 @@
                     class="__input w-full"
                     type="password"
                     name="password"
-                    placeholder="Masukan Password Anda"
+                    placeholder="Password Anda"
                     id="password"
                     required
                     data-control="err-password"
@@ -108,44 +122,7 @@
                   Harap isi kata sandi
                 </div>
               </div>
-              <div class="flex items-center gap-2">
-                <div class="inline-flex items-center">
-                  <label
-                    class="relative flex cursor-pointer items-center rounded-full"
-                    for="remember"
-                    data-ripple-dark="true"
-                  >
-                    <input
-                      type="checkbox"
-                      class="before:content[''] peer relative sm:h-5 sm:w-5 h-4 w-4 cursor-pointer appearance-none rounded border border-[#7F7F7F] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#F28A00] checked:bg-[#F28A00] checked:before:bg-[#F28A00] hover:before:opacity-10"
-                      name="remember"
-                    />
-                    <div
-                      class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="sm:h-3.5 sm:w-3.5 h-3 w-3"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        stroke="currentColor"
-                        stroke-width="1"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </label>
-                </div>
-                <label
-                  class="text-[#484848] text-sm font-normal leading-5 roboto"
-                  for="remember"
-                  >Ingat saya</label
-                >
-              </div>
+              <div class="text-[#FF6F31]">lupa password?</div>
             </div>
             <button type="submit" class="__btn-primary">Masuk</button>
           </div>
