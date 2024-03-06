@@ -59,6 +59,9 @@
   .__btn-primary {
     @apply roboto font-semibold sm:text-xl text-base tracking-[-0.16px] text-white bg-[#FF6F31] hover:bg-orange-400 sm:py-4 sm:px-7 px-4 py-3 rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#FF6F31];
   }
+  .__captcha {
+    @apply sm:gap-8 gap-4 flex w-full items-center;
+  }
 }
 
 .noto-sans {
