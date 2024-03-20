@@ -600,9 +600,9 @@ video {
 }
 
 .__main-content {
-  position: absolute;
-  right: 4rem;
   z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   min-width: 100%;
   flex-direction: column;
@@ -632,6 +632,8 @@ video {
 
 @media (min-width: 1024px) {
   .__main-content {
+    position: absolute;
+    right: 4rem;
     min-width: 40%;
   }
 }
