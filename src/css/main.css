@@ -8,32 +8,15 @@
   }
 
   .__left-img {
-    @apply w-1/2 h-full relative overflow-hidden p-8 hidden lg:block;
+    @apply w-2/3 h-full relative overflow-hidden p-8 hidden lg:block;
   }
 
   .__main-content {
-    @apply flex flex-col justify-center 2xl:gap-8 sm:gap-6 gap-3 h-full sm:px-6 sm:py-14 px-6 py-12 lg:min-w-[45%] sm:min-w-[70%] min-w-full bg-white relative z-10 mx-auto;
-  }
-
-  /* perubahan responsive logo */
-  .__brand {
-    @apply flex gap-2 sm:h-[53px] h-[35px] mb-10 sm:mb-0 sm:absolute sm:top-[64px] sm:left-[64px] text-white;
-  }
-
-  .__brand-mobile {
-    @apply flex items-center gap-2 sm:h-[53px] h-[35px] mb-10 sm:mb-0 sm:absolute sm:top-[-64px] sm:left-[64px] text-white sm:hidden;
-  }
-
-  .__brand .__brand-img {
-    @apply w-[46px] h-[56px];
-  }
-
-  .__brand-img-mobile {
-    @apply w-[26px] h-[32px];
+    @apply absolute right-16 flex flex-col justify-center 2xl:gap-8 sm:gap-6 gap-3 sm:px-24 sm:py-10 px-6 py-12 lg:min-w-[40%] sm:min-w-[70%] min-w-full bg-white/80 backdrop-blur-lg z-10 rounded-[20px];
   }
 
   .__heading-1 {
-    @apply text-[#FF6F31] noto-sans 2xl:text-[32px] sm:text-[40px] text-3xl font-bold sm:leading-[52px] whitespace-nowrap;
+    @apply text-[#176F01] noto-sans sm:text-[38px] text-3xl font-bold sm:leading-[48px] whitespace-nowrap;
   }
 
   .__text-1 {
@@ -45,7 +28,7 @@
   }
 
   .__input {
-    @apply sm:py-5 py-4 sm:px-6 px-5 text-sm font-normal noto-sans rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#FF6F31] border border-[#7F7F7F];
+    @apply sm:py-5 py-4 sm:px-6 px-5 text-sm font-normal noto-sans rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#176f0173] border border-[#7F7F7F];
   }
 
   .__input.__input-error {
@@ -57,7 +40,7 @@
   }
 
   .__btn-primary {
-    @apply roboto font-semibold sm:text-xl text-base tracking-[-0.16px] text-white bg-[#FF6F31] hover:bg-orange-400 sm:py-4 sm:px-7 px-4 py-3 rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#FF6F31];
+    @apply roboto font-semibold sm:text-xl text-base tracking-[-0.16px] text-white bg-[#176F01] hover:bg-green-900 sm:py-4 sm:px-7 px-4 py-3 rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#176F01];
   }
   .__captcha {
     @apply sm:gap-8 gap-4 flex w-full items-center;
