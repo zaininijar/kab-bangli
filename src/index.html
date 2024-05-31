@@ -18,52 +18,26 @@
   </head>
   <body>
     <div class="__wrapper">
-      <div class="__left-img">
-        <div class="__destination right-12 top-64">
-          <div class="__avatar">
-            <img src="../images/gunung-abang.png" alt="" />
-          </div>
-          <p>Gunung Abang</p>
-        </div>
-        <div class="__destination left-16 top-1/2">
-          <div class="__avatar">
-            <img src="../images/waterfall.png" alt="" />
-          </div>
-          <p>Tukad Cepung Waterfall</p>
-        </div>
-        <div class="__destination right-12 bottom-44">
-          <div class="__avatar">
-            <img src="../images/pura-ulun.png" alt="" />
-          </div>
-          <p>Pura Ulun Danu Batur</p>
-        </div>
-        <div class="__location">
-          <div class="__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z"
-              ></path>
-            </svg>
-          </div>
-          <p>Danau Batur</p>
-        </div>
+      <div
+        class="__left-img bg-no-repeat w-6/12"
+        style="background-image: url('./../images/elipse.svg')"
+      >
         <img
-          class="object-cover object-center h-full w-full"
-          src="../images/bg.png"
+          class="object-contain object-center h-full w-full"
+          src="../images/wallet.png"
           alt=""
         />
       </div>
       <div class="__main-content">
+        <div class="__brand">
+          <img src="./../images/logo.png" alt="" />
+        </div>
         <div
           class="text-start 2xl:w-[400px] sm:w-[350px] w-full mx-auto relative md:right-[-20px]"
         >
-          <h1 class="__heading-1">Selamat Datang</h1>
-          <h1 class="__heading-1 text-[#121926] mb-2">di Kabupaten Bangli</h1>
-          <p class="__text-1">Silahkan masuk ke akun Anda untuk melanjutkan</p>
+          <h1 class="__heading-1 text-[#ED213A] text-center">
+            Selamat Datang!
+          </h1>
         </div>
         <form
           action="#"
@@ -74,20 +48,20 @@
           <div class="flex flex-col 2xl:gap-8 sm:gap-4 gap-2">
             <div class="flex flex-col 2xl:gap-5 sm:gap-3 gap-2">
               <div class="flex flex-col 2xl:gap-4 gap-2">
-                <label for="nik-email" class="__label-input">Email</label>
+                <label for="nik-username" class="__label-input">username</label>
                 <input
                   class="__input"
                   type="text"
-                  name="email"
-                  placeholder="emailanda@gmail.com"
-                  id="email"
+                  name="username"
+                  placeholder="Masukan Username Anda"
+                  id="username"
                   required
                   oninput="inputValidation(event)"
                   oninvalid="inputValidation(event)"
-                  data-control="err-email"
+                  data-control="err-username"
                 />
-                <div id="err-email" class="__error-message hidden">
-                  Harap isi Email
+                <div id="err-username" class="__error-message hidden">
+                  Harap isi username
                 </div>
               </div>
               <div class="flex flex-col 2xl:gap-3 gap-2 relative">
@@ -148,7 +122,7 @@
                   <canvas id="CapCode"></canvas>
                 </div>
                 <div
-                  class="border border-[#8F94FB] rounded-full cursor-pointer p-1"
+                  class="border border-[#ED213A] rounded-full cursor-pointer p-1"
                   onclick="CreateCaptcha()"
                 >
                   <svg
@@ -161,7 +135,7 @@
                     <g clip-path="url(#clip0_6_723)">
                       <path
                         d="M12 4.5V1.5L8 5.5L12 9.5V6.5C15.31 6.5 18 9.19 18 12.5C18 13.51 17.75 14.47 17.3 15.3L18.76 16.76C19.54 15.53 20 14.07 20 12.5C20 8.08 16.42 4.5 12 4.5ZM12 18.5C8.69 18.5 6 15.81 6 12.5C6 11.49 6.25 10.53 6.7 9.7L5.24 8.24C4.46 9.47 4 10.93 4 12.5C4 16.92 7.58 20.5 12 20.5V23.5L16 19.5L12 15.5V18.5Z"
-                        fill="#8F94FB"
+                        fill="#ED213A"
                       />
                     </g>
                     <defs>
@@ -180,7 +154,7 @@
               <div class="flex flex-col relative w-5/12">
                 <input
                   type="text"
-                  class="__input py-3"
+                  class="__input __captcha"
                   id="captcha-code"
                   required
                   oninput="inputValidation(event)"

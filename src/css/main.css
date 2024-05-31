@@ -7,16 +7,24 @@
     @apply min-h-screen h-screen overflow-hidden flex items-center relative z-10;
   }
 
+  .__brand {
+    @apply absolute top-6 sm:top-8 sm:right-14 w-[150px];
+  }
+
+  .__brand img {
+    @apply object-cover w-full h-full;
+  }
+
   .__left-img {
     @apply w-2/3 h-full relative overflow-hidden hidden lg:block;
   }
 
   .__main-content {
-    @apply flex flex-col justify-center 2xl:gap-8 bg-white sm:gap-5 gap-3 w-[652px] h-full relative rounded-l-[20px] md:left-[-20px] px-6 md:px-0 mx-auto;
+    @apply flex flex-col justify-center 2xl:gap-8 bg-white sm:gap-5 gap-3 w-[652px] h-full relative rounded-l-[20px] px-6 md:px-0 mx-auto;
   }
 
   .__heading-1 {
-    @apply text-[#8F94FB] noto-sans sm:text-[28px] 2xl:text-[36px] text-3xl font-bold sm:leading-[36px] 2xl:leading-[40px] whitespace-nowrap;
+    @apply text-[#ED213A] noto-sans sm:text-[24px] 2xl:text-[36px] text-xl font-bold sm:leading-[36px] 2xl:leading-[40px] whitespace-nowrap;
   }
 
   .__text-1 {
@@ -28,7 +36,11 @@
   }
 
   .__input {
-    @apply 2xl:py-5 sm:py-4 py-4 sm:px-6 px-5 text-sm font-normal noto-sans rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#8F94FB73] border border-[#7F7F7F];
+    @apply 2xl:py-5 sm:py-3 py-3 sm:px-6 px-5 text-sm font-normal noto-sans rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#ED213A] border border-[#7F7F7F];
+  }
+
+  .__input.__captcha {
+    @apply border-b border-transparent border-b-gray-500 rounded-none focus:border-transparent focus:border-b-red-500 focus:ring-transparent focus:outline-none;
   }
 
   .__input.__input-error {
@@ -40,30 +52,10 @@
   }
 
   .__btn-primary {
-    @apply roboto font-semibold sm:text-xl text-base tracking-[-0.16px] text-white bg-gradient-to-r from-[#4E54C8] to-[#8F94FB] 2xl:py-4 sm:py-3 sm:px-7 px-4 py-3 rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#8F94FB];
+    @apply roboto font-semibold sm:text-xl text-base tracking-[-0.16px] text-white bg-gradient-to-r from-[#ED213A] to-[#93291E] 2xl:py-4 sm:py-2 sm:px-7 px-4 py-2 rounded-lg sm:rounded-[10px] focus:ring-2 ring-blue-200 outline-[#ED213A];
   }
   .__captcha {
     @apply sm:gap-8 gap-4 flex w-full items-center;
-  }
-
-  .__destination {
-    @apply absolute inter flex gap-2 items-center px-3 py-2 bg-black/40 backdrop-blur-md rounded-[20px] text-white text-sm;
-  }
-
-  .__destination .__avatar {
-    @apply w-8 h-8 relative overflow-hidden rounded-full;
-  }
-
-  .__destination .__avatar img {
-    @apply w-full h-full object-cover;
-  }
-
-  .__location {
-    @apply absolute inter flex gap-2 items-center px-3 py-2 bg-[#8F94FB] rounded-[12px] text-white text-sm left-14 bottom-20;
-  }
-
-  .__location .__icon {
-    @apply w-5 h-6;
   }
 }
 
